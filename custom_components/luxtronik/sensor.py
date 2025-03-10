@@ -18,6 +18,8 @@ from .const import (
     CONF_GROUP,
     CONF_PARAMETERS,
     CONF_VISIBILITIES,
+    CONF_HOLDINGS,
+    CONF_INPUTS,
     CONF_STATE_CLASS,
     DEVICE_CLASSES,
     ICONS,
@@ -37,7 +39,7 @@ PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend(
                 {
                     vol.Required(CONF_GROUP): vol.All(
                         cv.string,
-                        vol.Any(CONF_PARAMETERS, CONF_CALCULATIONS, CONF_VISIBILITIES),
+                        vol.Any(CONF_PARAMETERS, CONF_CALCULATIONS, CONF_VISIBILITIES, CONF_HOLDINGS, CONF_INPUTS),
                     ),
                     vol.Required(CONF_ID): cv.string,
                     vol.Optional(CONF_FRIENDLY_NAME): cv.string,

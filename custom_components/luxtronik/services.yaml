@@ -10,3 +10,16 @@ write:
       name: value
       description: Value to write.
       example: "Automatic"
+
+write_modbus:
+  name: luxtronik-write-modbus
+  description: Write a holding register on the luxtronik heatpump.
+  fields:
+    holding:
+      name: holding
+      description: ID of the value to write.
+      example: "Heating_mode"
+    value:
+      name: value
+      description: Value to write.
+      example: "Setpoint"

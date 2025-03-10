@@ -2,7 +2,7 @@
 
 from homeassistant.const import (
     UnitOfTemperature,
-    UnitOfTime, 
+    UnitOfTime,
     UnitOfPressure,
     UnitOfEnergy,
     UnitOfElectricPotential,
@@ -13,7 +13,9 @@ from homeassistant.const import (
 from homeassistant.components.sensor import SensorDeviceClass
 
 ATTR_PARAMETER = "parameter"
+ATTR_HOLDING = "holding"
 ATTR_VALUE = "value"
+CONF_PORT_MODBUS = "port_modbus"
 
 CONF_STATE_CLASS = "state_class"
 CONF_INVERT_STATE = "invert"
@@ -22,6 +24,8 @@ CONF_GROUP = "group"
 CONF_PARAMETERS = "parameters"
 CONF_CALCULATIONS = "calculations"
 CONF_VISIBILITIES = "visibilities"
+CONF_HOLDINGS = "holdings"
+CONF_INPUTS = "inputs"
 
 CONF_TEMP = "temperature"
 CONF_FREQUENCY = "frequency"

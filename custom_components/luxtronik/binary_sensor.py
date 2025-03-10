@@ -15,6 +15,8 @@ from .const import (
     CONF_INVERT_STATE,
     CONF_PARAMETERS,
     CONF_VISIBILITIES,
+    CONF_HOLDINGS,
+    CONF_INPUTS,
 )
 
 ICON_ON = "mdi:check-circle-outline"
@@ -32,7 +34,7 @@ PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend(
                 {
                     vol.Required(CONF_GROUP): vol.All(
                         cv.string,
-                        vol.In([CONF_PARAMETERS, CONF_CALCULATIONS, CONF_VISIBILITIES]),
+                        vol.In([CONF_PARAMETERS, CONF_CALCULATIONS, CONF_VISIBILITIES, CONF_HOLDINGS, CONF_INPUTS]),
                     ),
                     vol.Required(CONF_ID): cv.string,
                     vol.Optional(CONF_FRIENDLY_NAME): cv.string,
