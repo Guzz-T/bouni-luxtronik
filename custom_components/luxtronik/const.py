@@ -49,6 +49,7 @@ CONF_KWH = "kWh"
 CONF_VOLT = "V"
 CONF_LPH = "l/h"
 CONF_WATT = "W"
+CONF_KWATT = "kW"
 CONF_HZ = "Hz"
 CONF_RPM = "rpm"
 
@@ -100,6 +101,7 @@ UNITS = {
     CONF_MIN: UnitOfTime.MINUTES,
     CONF_LPH: "l/h",
     CONF_WATT: UnitOfPower.WATT,
+    CONF_WATT: UnitOfPower.KILO_WATT,
     CONF_HZ: UnitOfFrequency.HERTZ,
     CONF_RPM: "rpm",
 }
